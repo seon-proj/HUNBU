@@ -1,0 +1,67 @@
+//plugins {
+//	id 'java'
+//	id 'org.springframework.boot' version '3.2.4'
+//	id 'io.spring.dependency-management' version '1.1.4'
+////	id 'maven-publish'
+//}
+//
+//group = 'io.hunsu'
+//version = '0.0.1-SNAPSHOT'
+//
+//java {
+//	sourceCompatibility = '21'
+//}
+//
+//configurations {
+//	compileOnly {
+//		extendsFrom annotationProcessor
+//	}
+//}
+//
+//repositories {
+//	mavenCentral()
+//}
+//
+//dependencies {
+////	implementation 'org.springframework:spring-webflux:6.1.5'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+//	implementation 'org.springframework.boot:spring-boot-starter-jooq'
+//	compileOnly 'org.projectlombok:lombok'
+//	runtimeOnly 'com.mysql:mysql-connector-j'
+//	runtimeOnly 'io.asyncer:r2dbc-mysql'
+//	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+//	annotationProcessor 'org.projectlombok:lombok'
+//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//	testImplementation 'io.projectreactor:reactor-test'
+//}
+//
+//tasks.named('test') {
+//	useJUnitPlatform()
+//}
+//
+//
+//
+//task writeNewPoms {
+//	doLast {
+//		def pomFile = file("pom.xml")
+//		pomFile.text = writePom()
+//	}
+//}
+//
+//def writePom() {
+//	def xml = new StringWriter()
+//	def xmlWriter = new groovy.xml.MarkupBuilder(xml)
+//
+//	xmlWriter.project {
+//		inceptionYear '2014'
+//		licenses {
+//			license {
+//				name 'The Apache Software License, Version 2.0'
+//				url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//				distribution 'repo'
+//			}
+//		}
+//	}
+//
+//	return xml.toString()
+//}
