@@ -11,6 +11,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/hunsu/posting")
@@ -24,7 +26,7 @@ public class PostingController {
     }
 
     @GetMapping
-    public RestResponse<PostingResponse[]> getAllPosting(){
+    public RestResponse<List<PostingResponse>> getAllPosting(){
         return new RestResponse<>(postingService.getAllPosting(), HttpStatus.OK.value());
     }
 

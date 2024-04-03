@@ -50,10 +50,10 @@ public class PostingRepository {
         return Optional.of(record.into(PostingResponse.class));
     }
 
-    public Optional<PostingResponse[]> findAll(){
+    public Optional<List<PostingResponse>> findAll(){
         Result<PostingRecord> fetch = create.selectFrom(Posting.POSTING).fetch();
-        PostingResponse[] postings = fetch.intoArray(fetch.size(), PostingResponse.class);
-        return Optional.of(postings);
+        List<PostingResponse> list = fetch.into(PostingResponse.class);
+        return Optional.of(list);
     }
 
 

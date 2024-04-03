@@ -6,6 +6,8 @@ import io.hunsu.hunbu.util.exception.ItemNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PostingService {
@@ -16,7 +18,7 @@ public class PostingService {
         return postingRepository.findOne(id).orElseThrow(() -> new ItemNotFoundException("해당 포스팅이 존재하지 않습니다"));
     }
 
-    public PostingResponse[] getAllPosting(){
+    public List<PostingResponse> getAllPosting(){
 
         return postingRepository.findAll().orElseThrow(() -> new ItemNotFoundException("포스팅이 0건 존재합니다."));
     }

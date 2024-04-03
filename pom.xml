@@ -161,7 +161,7 @@
               <driver>com.mysql.cj.jdbc.Driver</driver>
               <url>jdbc:mysql://localhost:3306/hunbu?serverTimezone=UTC</url>
               <username>root</username>
-              <password>pass</password>
+              <password>dbal9903</password>
               <srcFiles>
                 <srcFile>${basedir}/src/main/resources/schema.sql</srcFile>
               </srcFiles>
@@ -210,7 +210,7 @@
                 <driver>com.mysql.cj.jdbc.Driver</driver>
                 <url>jdbc:mysql://localhost:3306/hunbu?serverTimezone=UTC</url>
                 <user>root</user>
-                <password>pass</password>
+                <password>dbal9903</password>
               </jdbc>
               <generator>
                 <name>org.jooq.codegen.JavaGenerator</name>
